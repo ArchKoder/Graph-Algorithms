@@ -1,6 +1,5 @@
 from collections import defaultdict
 class Graph():
-    """directed graph with no weight"""
     def __init__(self,v=0):
         self.V=v
         self.to=[]
