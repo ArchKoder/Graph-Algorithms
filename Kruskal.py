@@ -13,7 +13,7 @@ graph=[
 {2:5,4:1,6:1},
 {5:1}
 ]
-def prim(graph):
+def kruskal(graph):
     edges=[]
     for v in range(len(graph)):
         for n,e in graph[v].items():
@@ -28,4 +28,4 @@ def prim(graph):
             visited[e[1]]=visited[e[2]]=True
             g.append(e)
     print(g)
-prim(graph)
+kruskal(graph)
